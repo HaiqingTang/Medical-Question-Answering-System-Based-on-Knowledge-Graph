@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <title>我的消息</title>
+</head>
+<body>
+<p>导航
+    <a href="/">主页</a>
+    <a href="/myInfo/">我的信息</a>
+    <a href="/discussion/">交流区</a>
+    <a href="/myFollow/">我的关注</a>
+    <a href="/myMessage/">我的消息</a>
+</p>
+<table border="1" class="center">
+    {% for sendUid in sendUids %}
+    <tr>
+        <td>
+            <p>用户<a href="/info/{{sendUid.uid}}/">{{sendUid.name}}</a>在{{sendUid.date}}给您发送了消息</p>
+            <p><a href="/sendMessage/{{sendUid.uid}}/">去查看</a></p>
+        </td>
+    </tr>
+    {% endfor %}
+</table>
+</body>
+</html>

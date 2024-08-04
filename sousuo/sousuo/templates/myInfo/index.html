@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <title>我的信息</title>
+</head>
+<body>
+<p>导航
+    <a href="/">主页</a>
+    <a href="/myInfo/">我的信息</a>
+    <a href="/discussion/">交流区</a>
+    <a href="/myFollow/">我的关注</a>
+    <a href="/myMessage/">我的消息</a>
+</p>
+<p>用户ID: {{uid}}</p>
+<p>昵称: {{name}}</p>
+<p>性别: {{sex}}</p>
+<p>年龄: {{age}}</p>
+<p>用户身份: {{role}}</p>
+<form action="/myInfo/" method="post">
+    <input type="submit" value="修改信息" name="changeInfo">
+    <input type="submit" value="修改密码" name="changePassword">
+</form>
+<p>
+    <a href="/myMark/">我的收藏</a> <a href="/myPosts/">我发表的</a>
+</p>
+</body>
+</html>

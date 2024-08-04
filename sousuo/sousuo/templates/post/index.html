@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <title>{{title}}</title>
+</head>
+<body>
+<p>导航
+    <a href="/">主页</a>
+    <a href="/myInfo/">我的信息</a>
+    <a href="/discussion/">交流区</a>
+    <a href="/myFollow/">我的关注</a>
+    <a href="/myMessage/">我的消息</a>
+</p>
+<p>
+    <a href="/myMark/">我的收藏</a> <a href="/myPosts/">我发表的</a>
+</p>
+<div>
+    <h2>{{title}}</h2>
+    <form method="post" action="/post/{{postId}}/" name="0">
+        {% if isMark %}
+        <input type="submit" name="cancelMark" value="已收藏">
+        {% else %}
+        <input type="submit" name="mark" value="收藏">
+        {% endif %}
+    </form>
+    <p>发布者:<a href="/info/{{uid}}/">{{authorName}}</a> {{authorRole}}</p>
+    <p>{{body}}</p>
+    <p>发布于: {{date.year}}/{{date.month}}/{{date.day}}-{{date.hour}}:{{date.minute}}</p>
+</div>
+
+
+<div>
+    <h3>回复区</h3>
+    <table border="1" class="center">
+        {% for post in back_posts %}
+        <tr>
+            <td><p>{{post.body|linebreaksbr}}</p>
+                用户：<a href="/info/{{post.uid}}/">{{post.name}}</a><br>{{post.date}}<br><br></td>
+        </tr>
+        {% endfor %}
+    </table>
+    <form method="post" action="/post/{{postId}}/" name="form1">
+        <p>回复内容</p>
+        <textarea name="body" placeholder="请文明发言" style="height:350px;width:1200px;resize:none;"></textarea>
+        <br>
+        <input type="submit" value="点击发表" name="reply">
+    </form>
+</div>
+</body>
+</html>

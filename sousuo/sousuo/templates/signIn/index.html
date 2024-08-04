@@ -1,0 +1,590 @@
+<html lang="zh-CN">
+<head>
+<title>主页</title>
+    <base href="/">
+<link href="../static/css/bootstrap.css" rel='stylesheet' type='text/css' />
+<!-- Custom Theme files -->
+<link rel="stylesheet" href="../static/css/menu.css" />
+<link href="../static/css/style.css" rel="stylesheet" type="text/css" media="all" />
+<!-- Custom Theme files -->
+<script src="../static/js/jquery.min.js"></script>
+<script src="../static/js/bootstrap.min.js"></script>
+<!-- Custom Theme files -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="My Show Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template,
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!--webfont-->
+<link href='#css?family=Oxygen:400,700,300' rel='stylesheet' type='text/css'>
+<link href='#css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+	<!-- start menu -->
+<link href="../static/css/megamenu.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="../static/js/megamenu.js"></script>
+<script>$(document).ready(function(){$(".megamenu").megamenu();});</script>
+<script type="text/javascript" src="../static/js/jquery.leanModal.min.js"></script>
+<link rel="stylesheet" href="../static/css/font-awesome.min.css" />
+<script src="../static/js/easyResponsiveTabs.js" type="text/javascript"></script>
+		    <script type="text/javascript">
+			    $(document).ready(function () {
+			        $('#horizontalTab').easyResponsiveTabs({
+			            type: 'default', //Types: default, vertical, accordion
+			            width: 'auto', //auto or any width like 600px
+			            fit: true   // 100% fit in a container
+			        });
+			    });
+</script>
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+<![endif]-->
+<!---- start-smoth-scrolling---->
+<script type="text/javascript" src="../static/js/move-top.js"></script>
+<script type="text/javascript" src="../static/js/easing.js"></script>
+<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
+				});
+			});
+		</script>
+<!---- start-smoth-scrolling---->
+
+</head>
+<body>
+	<!-- header-section-starts -->
+
+<div id="dg" style="z-index: 9999; position: fixed ! important; right: 30px; top: 400px;">
+<table width=""100% style="position: absolute; width:260px; right: 0px; top: 0px;">
+<a href="index.html"><img src="static\images\arr.png" alt="" /></a>
+</table>
+</div>
+
+		<div class="header-top-strip">
+			<div class="container">
+				<div class="header-top-left">
+					<p><a href="https://www.baidu.com">帮助</a>
+				<div id="small-dialog" class="mfp-hide">
+						<div class="select-city">
+							<div class="confirmation">
+						</div>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+				</div>
+{#				<div class="header-top-right">#}
+{#				<div class="modal fade">#}
+{#  <div class="modal-dialog">#}
+{#    <div class="modal-content">#}
+{#      <div class="modal-header">#}
+{#        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>#}
+{#        <h4 class="modal-title">Modal title</h4>#}
+{#      </div>#}
+{#      <div class="modal-body">#}
+{#        <p>One fine body&hellip;</p>#}
+{#      </div>#}
+{#      <div class="modal-footer">#}
+{#        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>#}
+{#        <button type="button" class="btn btn-primary">Save changes</button>#}
+{#      </div>#}
+{#    </div><!-- /.modal-content -->#}
+{#  </div><!-- /.modal-dialog -->#}
+{#	</div><!-- /.modal -->#}
+{#<script>#}
+{#$('#myModal').modal('show');#}
+{#</script>#}
+{#</div>#}
+                <div class="clearfix"></div>
+			</div>
+		</div>
+		<div class="container">
+		  <div class="main-content">
+			<div class="header">
+				<div class="logo">
+					<a href="index.html"><h1>医药问答系统</h1></a>
+				</div>
+				<div class="search">
+					<div class="search2">
+					  <form>
+						<i class="fa fa-search"></i>
+						 <input type="text" value="查询症状、药物等......" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = '查询症状、药物等......';}"/>
+					  </form>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+	<div class="bootstrap_container">
+            <nav class="navbar navbar-default w3_megamenu" role="navigation">
+                <div class="navbar-header">
+          			<button type="button" data-toggle="collapse" data-target="#defaultmenu" class="navbar-toggle"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="index.html" class="navbar-brand"><i class="fa fa-home"></i></a>
+				</div><!-- end navbar-header -->
+
+            <div id="defaultmenu" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="index.html">主页</a></li>
+                    <!-- Mega Menu -->
+					<li class="dropdown w3_megamenu-fw"><a href="movies.html" data-toggle="dropdown" class="dropdown-toggle">常见疾病门类<b class="caret"></b></a>
+                        <ul class="dropdown-menu fullwidth">
+                            <li class="w3_megamenu-content">
+                                <div class="row">
+								<h5 class="movies-page">详细查询- <a href="movies.html">点击这里</a> </h5>
+                                    <div class="col-sm-4">
+                                  		<h3 class="title">呼吸系统常见疾病</h3>
+										<ul class="mov_list">
+						<li><a href="https://www.baidu.com/">感冒</a></li>
+					</ul>
+					<ul class="mov_list">
+						<li><a href="https://www.baidu.com/">肺炎</a></li>
+					</ul>
+					<ul class="mov_list">
+						<li><a href="https://www.baidu.com/">肺结核</a></li>
+					</ul>
+					<ul class="mov_list">
+						<li><a href="https://www.baidu.com/">呼吸衰竭</a></li>
+					</ul>
+					<ul class="mov_list">
+						<li><a href="https://www.baidu.com/">肺癌</a></li>
+					</ul>
+                                    </div><!-- end col-4 -->
+                                    <div class="col-sm-4 movie-dd">
+                                  		<h3 class="title">消化系统常见疾病</h3>
+										<p><a href="https://www.baidu.com/">胃食管反流病</a></p>
+										<p><a href="https://www.baidu.com/">溃疡性结肠炎</a></p>
+										<p><a href="https://www.baidu.com/">消化道出血</a></p>
+										<p><a href="https://www.baidu.com/">胃炎</a></p>
+										<p><a href="https://www.baidu.com/">大肠癌</a></p>
+                                    </div><!-- end col-4 -->
+                                    <div class="col-sm-4 movie-dd">
+                                  		<h3 class="title">代谢疾病与营养疾病</h3>
+										<p><a href="https://www.baidu.com/">糖尿病</a></p>
+										<p><a href="https://www.baidu.com/">低血糖症</a></p>
+										<p><a href="https://www.baidu.com/">血脂异常</a></p>
+										<p><a href="https://www.baidu.com/">肥胖症</a></p>
+										<p><a href="https://www.baidu.com/">骨质疏松</a></p>
+                                    </div><!-- end col-4 -->
+                                <hr>
+							</li>
+                        </ul>
+                    </li>
+					<li class="dropdown w3_megamenu-fw"><a href="#" data-toggle="dropdown" class="dropdown-toggle">常见临床表现<b class="caret"></b></a>
+                      <ul class="dropdown-menu half">
+                            <li class="w3_megamenu-content withdesc">
+                                <div class="row">
+					<h5 class="movies-page">详细查询- <a href="events.html">点击这里</a> </h5>
+								<h3 class="title">常见症状</h3>
+                                    <div class="col-sm-3">
+                                    	<div class="e-movie">
+								<div class="e-movie-img">
+									<a href="events.html"><img src="../static/images/f2.jpg" alt="" /></a>
+								</div>
+								<div class="e-buy-tickets">
+									<a href="event-payment.html">我也要问</a>
+								</div>
+							</div>
+                                    </div>
+                                    <div class="col-sm-3">
+                                    	<div class="e-movie">
+								<div class="e-movie-img">
+									<a href="events.html"><img src="../static/images/f3.jpg" alt=""></a>
+								</div>
+								<div class="e-buy-tickets">
+									<a href="event-payment.html">我也要问</a>
+								</div>
+							</div>
+                                    </div>
+                                    <div class="col-sm-3">
+                                    	<div class="e-movie">
+								<div class="e-movie-img">
+									<a href="events.html"><img src="../static/images/f4.jpg" alt="" /></a>
+								</div>
+								<div class="e-buy-tickets">
+									<a href="event-payment.html">我也要问</a>
+								</div>
+							</div>
+                                    </div>
+                                    <div class="col-sm-3">
+                                    	<div class="e-movie">
+								<div class="e-movie-img">
+									<a href="events.html"><img src="../static/images/f1.jpg" alt="" /></a>
+								</div>
+								<div class="e-buy-tickets">
+									<a href="event-payment.html">我也要问</a>
+								</div>
+							</div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+					</li>
+					<li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">生活小贴士<b class="caret"></b></a>
+							 <ul class="dropdown-menu half3">
+                            <li class="w3_megamenu-content withoutdesc">
+                                <div class="row">
+								<h5 class="movies-page">查看更多- <a href="https://www.sohu.com/a/391207069_120627024">点击这里</a> </h5>
+								<h3 class="title">健康生活小常识</h3>
+                                    <div class="col-sm-3">
+                                    	<div class="e-movie">
+								<div class="e-movie-img">
+									<a href="https://www.sohu.com/a/391207069_120627024"><img src="../static/images/me1.jpg" alt="" /></a>
+									<a class="plays-go" href="#">挑准时间吃水果</a>
+								</div>
+							</div>
+                                    </div>
+                                    <div class="col-sm-3">
+                                    	<div class="e-movie">
+								<div class="e-movie-img">
+									<a href="https://www.sohu.com/a/391207069_120627024"><img src="../static/images/me2.jpg" alt="" /></a>
+									<a class="plays-go" href="#">什么偷走你的健康</a>
+								</div>
+							</div>
+                                    </div>
+                                    <div class="col-sm-3">
+                                    	<div class="e-movie">
+								<div class="e-movie-img">
+									<a href="https://www.sohu.com/a/391207069_120627024"><img src="../static/images/me3.jpg" alt="" /></a>
+									<a class="plays-go" href="#">剩菜时间不宜过长</a>
+								</div>
+							</div>
+                                    </div>
+                                    <div class="col-sm-3">
+                                    	<div class="e-movie">
+								<div class="e-movie-img">
+									<a href="https://www.sohu.com/a/391207069_120627024"><img src="../static/images/me4.jpg" alt="" /></a>
+									<a class="plays-go" href="#">打包食物必须回锅</a>
+								</div>
+							</div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                       <!-- end dropdown-menu -->
+					</li>
+					<li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">更多<b class="caret"></b></a>
+							 <ul class="dropdown-menu" role="menu">
+
+	<li><a href="../myInfo/">个人信息</a></li>
+	<li><a href="../myMessage/">我的消息</a></li>
+	<li><a href="../post/">交流区</a></li>
+	<li><a href="contact.html">常见问题</a></li>
+	<li><a href="faq.html">关于我们</a></li>
+                            <li class="dropdown-submenu">
+                                <a href="#">新闻</a>
+								<ul class="dropdown-menu">
+																	<li><a href="press.html">最新药物</a></li>
+	<li><a href="public-relations.html">治愈案例</a></li>
+								</ul><!-- end dropdown-menu -->
+                            </li><!-- end dropdown-submenu -->
+                        </ul>
+                       <!-- end dropdown-menu -->
+					</li><!-- end standard drop down -->
+					<!-- end dropdown w3_megamenu-fw -->
+                </ul><!-- end nav navbar-nav -->
+
+				<ul class="nav navbar-nav navbar-right">
+					<li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">联系我们<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <form id="contact1" action="#" name="contactform" method="post">
+                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                        <input type="text" name="name" id="name1" class="form-control" placeholder="姓名">
+                                        <input type="text" name="email" id="email1" class="form-control" placeholder="邮箱">
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                        <input type="text" name="phone" id="phone1" class="form-control" placeholder="联系电话">
+                                        <input type="text" name="subject" id="subject1" class="form-control" placeholder="问题分类">
+                                    </div>
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                        <textarea class="form-control" name="comments" id="comments1" rows="6" placeholder="问题描述......"></textarea>
+                                    </div>
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                        <div class="pull-right">
+                                            <input type="submit" value="发送" id="submit1" class="btn btn-primary small">
+                                        </div>
+                                    </div>
+									<div class="clearfix"></div>
+                                </form>
+                            </li>
+                        </ul>
+					</li>
+				</ul><!-- end nav navbar-nav navbar-right -->
+			</div><!-- end #navbar-collapse-1 -->
+
+			</nav><!-- end navbar navbar-default w3_megamenu -->
+		</div><!-- end container -->
+
+
+<!-- AddThis Smart Layers END -->
+
+
+	<div class="main-banner">
+		 <div class="banner col-md-8">
+			<section class="slider">
+				<div class="flexslider">
+						<ul class="slides">
+						<li>
+							<img src="../static/images/pic1.jpg" class="img-responsive" alt="" />
+						</li>
+						<li>
+							<img src="../static/images/pic2.jpg" class="img-responsive" alt="" />
+						</li>
+						<li>
+							<img src="../static/images/pic3.jpg" class="img-responsive" alt="" />
+						</li>
+						<li>
+							<img src="../static/images/pic4.jpg" class="img-responsive" alt="" />
+						</li>
+				  </ul>
+				</div>
+					</section>
+				 <!-- FlexSlider -->
+				 <script defer src="../static/js/jquery.flexslider.js"></script>
+				 <link rel="stylesheet" href="../static/css/flexslider.css" type="text/css" media="screen" />
+					<script type="text/javascript">
+				$(function(){
+				 SyntaxHighlighter.all();
+				});
+				$(window).load(function(){
+				  $('.flexslider').flexslider({
+					animation: "slide",
+					start: function(slider){
+					  $('body').removeClass('loading');
+					}
+				 });
+				});
+			 </script>
+         </div>
+		 <div class="col-md-4 banner-right">
+			<h4>快速问诊</h4>
+			<div class="grid_3 grid_5">
+				   <div class="bs-example bs-example-tabs" role="tabpanel" data-example-id="togglable-tabs">
+			<ul id="myTab" class="nav nav-tabs" role="tablist">
+			  <li role="presentation" class="active"><a href="#home" id="home-tab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true">常见疾病查询</a></li>
+			  <li role="presentation"><a href="#profile" role="tab" id="profile-tab" data-toggle="tab" aria-controls="profile" aria-expanded="false">常见症状查询</a></li>
+			</ul>
+			<div id="myTabContent" class="tab-content">
+			  <div role="tabpanel" class="tab-pane fade in active" id="home" aria-labelledby="home-tab">
+					<select class="list_of_movies"><option value="">选择疾病</option><option style="padding-left: 10px;" value="ANAN">感冒</option><option style="padding-left: 10px;" value="CHDM">发烧</option></select>
+					<h5 class="pre"><i class="fa fa-heart"></i>温馨提示 :</h5>
+                        <a>若条件允许，请及时去医院就诊 </a>
+                        <div class="pull-right">
+                            <input type="submit" value="查询" id="submit1" class="btn btn-primary small">
+                        </div>
+			  </div>
+			  <div role="tabpanel" class="tab-pane fade" id="profile" aria-labelledby="profile-tab">
+                  <select class="list_of_movies"><option value="">选择症状</option><option style="padding-left: 10px;" value="ANAN">感冒</option><option style="padding-left: 10px;" value="CHDM">发烧</option><option style="padding-left: 10px;" value="CHDM">流鼻涕</option><option style="padding-left: 10px;" value="CHDM">头疼</option></select>
+                  <h5 class="pre"><i class="fa fa-heart"></i>温馨提示 :</h5>
+                        <a>若条件允许，请及时去医院就诊 </a>
+                      <div class="pull-right">
+                            <input type="submit" value="查询" id="submit1" class="btn btn-primary small">
+                      </div>
+              </div>
+			</div>
+		   </div>
+		  </div>
+		 </div>
+		 <div class="clearfix"></div>
+	</div>
+				<div class="review-slider">
+			 <ul id="flexiselDemo1">
+			<li>
+				<a href="movies.html"><img src="../static/images/r1.jpg" alt=""/></a>
+				<div class="slide-title"><h4>咳嗽得厉害怎么办</h4> </div>
+				<div class="date-city">
+					<h5>2022.6.30</h5>
+					<h6>李医生解答</h6>
+					<div class="buy-tickets">
+						<a href="movie-select-show.html">我也要问</a>
+					</div>
+				</div>
+			</li>
+			<li>
+				<a href="movies.html"><img src="../static/images/r2.jpg" alt=""/></a>
+				<div class="slide-title"><h4>头痛欲裂怎么办</h4></div>
+				<div class="date-city">
+					<h5>2022.6.30</h5>
+					<h6>李医生解答</h6>
+					<div class="buy-tickets">
+						<a href="movie-select-show.html">我也要问</a>
+					</div>
+				</div>
+			</li>
+			<li>
+				<a href="movies.html"><img src="../static/images/r3.jpg" alt=""/></a>
+				<div class="slide-title"><h4>发烧很久没有好怎么办</h4></div>
+				<div class="date-city">
+					<h5>2022.6.30</h5>
+					<h6>李医生解答</h6>
+					<div class="buy-tickets">
+						<a href="movie-select-show.html">我也要问</a>
+					</div>
+				</div>
+			</li>
+			<li>
+				<a href="movies.html"><img src="../static/images/r4.jpg" alt=""/></a>
+				<div class="slide-title"><h4>吃坏东西拉肚子怎么办</h4></div>
+				<div class="date-city">
+					<h5>2022.6.30</h5>
+					<h6>李医生解答</h6>
+					<div class="buy-tickets">
+						<a href="movie-select-show.html">我也要问</a>
+					</div>
+				</div>
+			</li>
+			<li>
+				<a href="movies.html"><img src="../static/images/r5.jpg" alt=""/></a>
+				<div class="slide-title"><h4>不慎跌倒摔骨折怎么办</h4></div>
+				<div class="date-city">
+					<h5>2022.6.30</h5>
+					<h6>李医生解答</h6>
+					<div class="buy-tickets">
+						<a href="movie-select-show.html">我也要问</a>
+					</div>
+				</div>
+			</li>
+		</ul>
+			<script type="text/javascript">
+		$(window).load(function() {
+
+		  $("#flexiselDemo1").flexisel({
+				visibleItems: 5,
+				animationSpeed: 1000,
+				autoPlay: true,
+				autoPlaySpeed: 3000,
+				pauseOnHover: false,
+				enableResponsiveBreakpoints: true,
+				responsiveBreakpoints: {
+					portrait: {
+						changePoint:480,
+						visibleItems: 2
+					},
+					landscape: {
+						changePoint:640,
+						visibleItems: 3
+					},
+					tablet: {
+						changePoint:800,
+						visibleItems: 4
+					}
+				}
+			});
+			});
+		</script>
+		<script type="text/javascript" src="../static/js/jquery.flexisel.js"></script>
+		</div>
+		<div class="footer">
+			<div class="col-md-3 footer-left">
+				<div class="f-mov-list">
+					<h4>联系我们</h4>
+					<ul>
+						<li><a href="now-showing.html">诚信合作</a></li>
+						<li><a href="comming-soon.html">公司动态</a></li>
+						<li><a href="celebrities.html">投诉举报</a></li>
+					</ul>
+					<div class="clearfix"></div>
+				</div>
+				<div class="f-mov-list">
+					<h4>资讯动态</h4>
+					<ul>
+						<li><a href="404.html" target="target_blank">最新资讯</a></li>
+{#						<li><a href="blog.html" target="target_blank">Rajeev Masand</a></li>#}
+{#						<li><a href="blog.html" target="target_blank">Film Reviews</a></li>#}
+{#						<li><a href="write-us.html" target="target_blank">Guest Blogging</a></li>#}
+					</ul>
+					<div class="clearfix"></div>
+				</div>
+				</div>
+			<div class="col-md-3 footer-left">
+				<div class="f-mov-list">
+					<h4>行业解决方案</h4>
+					<ul>
+						<li><a href="regions.html">社区企业解决方案</a></li>
+						<li><a href="cinema-chain.html">教育行业解决方案</a></li>
+						<li><a href="cinemas.html">公益行业解决方案</a></li>
+                        <li><a href="cinemas.html">EAP(员工帮助)方案</a></li>
+                        <li><a href="cinemas.html">HR(人事招聘)方案</a></li>
+					</ul>
+					<div class="clearfix"></div>
+				</div>
+				</div>
+			<div class="col-md-3 footer-left">
+				<div class="f-mov-list">
+					<h4>关注我们</h4>
+					<ul>
+						<li><a href="donate.html">医心公众号</a></li>
+					</ul>
+					<div class="clearfix"></div>
+				</div>
+				<div class="f-mov-list">
+					<h4>软件下载</h4>
+					<ul>
+						<li><a href="site-map.html">医心app</a></li>
+						<li><a href="feed-back.html">医心小程序</a></li>
+					</ul>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+			<div class="col-md-3 footer-left">
+				<div class="f-mov-list">
+					<h4>联系方式</h4>
+					<ul>
+						<li><a href="#">投诉建议:xxxxxxxxx</a></li>
+						<li><a href="#">客服电话:xxxxxxxxx</a></li>
+					</ul>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+			<div class="clearfix"></div>
+			<div class="col-md-12">
+			<div class="footer-right">
+				<div class="follow-us">
+					<h5 class="f-head">关注我们</h5>
+					<ul class="social-icons">
+						<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="#"><i class="fa fa-youtube"></i></a></li>
+						<li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+						<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+						<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+					</ul>
+					<div class="clearfix"></div>
+				</div>
+				<div class="subscribe">
+					<h5 class="f-head">订阅我们</h5>
+					<input type="text" class="text" value="输入邮箱" onFocus="this.value = '';" onBlur="if (this.value == 'Enter email...') {this.value = 'Enter Email ID';}">
+					<input type="submit" value="提交">
+					<div class="clearfix"></div>
+				</div>
+				<div class="recent_24by7">
+					<a href="support.html"><i class="fa fa-question"></i>全时间段帮助</a>
+				</div>
+					<div class="clearfix"></div>
+			</div>
+			</div>
+			<div class="clearfix"></div>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+ <script type="text/javascript">
+						$(document).ready(function() {
+							/*
+							var defaults = {
+					  			containerID: 'toTop', // fading element id
+								containerHoverID: 'toTopHover', // fading element hover id
+								scrollSpeed: 1200,
+								easingType: 'linear'
+					 		};
+							*/
+
+							$().UItoTop({ easingType: 'easeOutQuart' });
+
+						});
+					</script>
+				<a href="#home" class="scroll" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+
+</body>
+</html>
+
+

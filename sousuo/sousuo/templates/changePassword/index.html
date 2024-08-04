@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <title>修改密码</title>
+</head>
+<body>
+<p>导航
+    <a href="/">主页</a>
+    <a href="/myInfo/">我的信息</a>
+    <a href="/discussion/">交流区</a>
+    <a href="/myFollow/">我的关注</a>
+    <a href="/myMessage/">我的消息</a>
+</p>
+<form method="post">
+    <p>原密码: <input type="password" placeholder="原密码" name="oldPassword"></p>
+    <p>新密码: <input type="password" placeholder="新密码" name="newPassword0"></p>
+    <p>再次输入新密码: <input type="password" placeholder="再次输入新密码" name="newPassword1"></p>
+    <input type="submit" value="确认修改" name="changePassword">
+    <p>{{text}}</p>
+</form>
+</body>
+</html>

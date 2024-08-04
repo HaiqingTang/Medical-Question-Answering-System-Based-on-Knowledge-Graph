@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <title>修改我的信息</title>
+</head>
+<body>
+<p>导航
+    <a href="/">主页</a>
+    <a href="/myInfo/">我的信息</a>
+    <a href="/discussion/">交流区</a>
+    <a href="/myFollow/">我的关注</a>
+    <a href="/myMessage/">我的消息</a>
+</p>
+<p>用户ID: {{uid}}</p>
+<form action="/myInfo/" method="post">
+  <p>昵称: <input type="text" name="name" value={{name}}></p>
+  <p>性别: <select name="sex">
+      <option value="隐藏">隐藏</option>
+      <option value="男">男</option>
+      <option value="女">女</option>
+  </select>
+  </p>
+  <p>年龄: <input type="text" name="age" value={{age}}></p>
+  <p>用户身份: {{role}}</p>
+  <input type="submit" name="change" value="修改">
+</form>
+</body>
+</html>

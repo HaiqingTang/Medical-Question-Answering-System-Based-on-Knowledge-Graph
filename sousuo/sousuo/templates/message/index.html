@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <title>私信页面</title>
+</head>
+<body>
+<p>导航
+    <a href="/">主页</a>
+    <a href="/myInfo/">我的信息</a>
+    <a href="/discussion/">交流区</a>
+    <a href="/myFollow/">我的关注</a>
+    <a href="/myMessage/">我的消息</a>
+</p>
+<table border="1" class="center">
+    {% for msg in msgs %}
+    <tr>
+        <td>
+            <p>{{msg.name}}  {{msg.time}}</p>
+            <p>{{msg.msg}}</p>
+        </td>
+    </tr>
+    {% endfor %}
+</table>
+<form method="get" action="/sendMessage/{{uid}}/" name="form0">
+    <button name="getMore">查看历史消息</button>
+</form>
+
+<form method="post" action="/sendMessage/{{uid}}/" name="form1">
+    <textarea name="message" style="height:350px;width:1200px;resize:none;"></textarea>
+    <br>
+    <input type="submit" value="发送" name="sendMessage">
+</form>
+</body>
+</html>
