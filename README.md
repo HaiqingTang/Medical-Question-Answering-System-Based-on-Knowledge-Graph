@@ -1,0 +1,2 @@
+# Medical-Question-Answering-System-Based-on-Knowledge-Graph
+This system based on the Django framework, incorporating Neo4j knowledge  graph and natural language processing (NLP) technologies. The system allows patients to input their symptoms,  processes the input sentences, queries the database, and returns the most probable results to the interface,  providing treatment suggestions to patients. 
